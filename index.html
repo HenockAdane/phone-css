@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <title>SIGN IN</title>
+        <link href="phone.css" rel="stylesheet" type="text/css">
+        <script src="https://use.fontawesome.com/57968cbe2e.js"></script>
+    </head>
+    <body>
+        <div class="phone-container">
+            <div class="phone-container2">
+                <div class="phonetop">
+                    <div class="phonetop1">
+                        <p>Henock</p>
+                        <i class="fa fas fa-signal"></i>
+                        <i class="fa fas fa-wifi"></i>
+                    </div>
+
+                    <div class="phonetop2">
+                        <i class="fa fab fa-bluetooth-b"></i>
+                        <p>75%</p>
+                        <i class="fa fas fa-battery-three-quarters"></i>
+
+                    </div>
+                </div>
+
+                <div class="phone-header">
+                    
+                    <div class="time">
+                        <h1>16:07</h1>
+                        <p>Thursday, 4 June</p>
+                    </div>
+
+                    <div class="weather">
+                        <p class="sun">&#9728;</p>
+                        <h1>25°</h1>
+                    </div>
+                </div>
+
+                <div class ="google-search">
+                    <div>
+                    <i class="fa fab fa-google"></i>
+                    <input type="search" id="google-search" placeholder='Say "Hey Google"'>
+                    <i class="fa fas fa-microphone"></i>
+                    </div>
+                </div>
+
+                <div class="grid-container">
+                <div class="apps">
+                    <i class="i1 fa fab fa-facebook-f"></i>
+                    <p class="description fb">Facebook</p>
+
+                    <i class="i2 fa fab fa-twitter"></i>
+                    <p class="description twit">Twitter</p>
+
+                    <i class="i3 fa fab fa-snapchat-ghost"></i>
+                    <p class="description sc">Snapchat</p>
+
+                    <i class="i4 fa fab fa-whatsapp"></i>
+                    <p class="description whatsA">WhatsApp</p>
+
+                    <i class="i5 fa fab fa-instagram"></i>
+                    <p class="description insta">Instagram</p>
+
+                    <i class="i6 fa fas fa-envelope"></i>
+                    <p class="description email">Email</p>
+
+                    <i class="i7 fa fas fa-play"></i>
+                    <p class="description playstore">PlayStore</p>
+
+                    <i class="i8 fa fab fa-linkedin"></i>
+                    <p class="description linkd">LinkedIn</p>
+
+                    <i class="i9 fa fab fa-youtube"></i>
+                    <p class="description ytube">YouTube</p>
+
+                    <i class="i10 fa fab fa-cogs"></i>
+                    <p class="description settings">Settings</p>
+                </div>
+                </div>
+
+                <div class="main-apps">
+                    <i class="fa fab fa-spotify"></i>
+                    <i class="fa fas fa-comments"></i>
+                    <i class="fa fas fa-plus-circle"></i>
+                    <i class="fa fas fa-camera"></i>
+                    <i class="fa fab fa-chrome"></i>
+                </div>
+                
+                <div class="bottom-nav">
+                    <i class="fa fas fa-chevron-left"></i>
+                    <i class="fa far fa-circle"></i>
+                    <i class="fa far fa-square"></i>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            *
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.phone-container
+{
+    background-color: black;
+    width: 50vw;
+    max-width: 280px;
+    height: 100vh;
+    max-height: 560px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-container2
+{
+    background: url("https://i.pinimg.com/564x/1d/7e/d7/1d7ed7200b8619c4c3ec401d979b1955.jpg");
+    background-color: rgb(0,0,0,0.5);
+    width: 95%;
+    height: 98%;
+    border-radius: 5%;
+    
+}
+
+.phonetop
+{
+    position: relative;
+    left:18px;
+    width:90%;
+    display:flex;
+}
+
+.phonetop1
+{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0 0 0;
+}
+
+.phonetop2
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0 0 0;
+}
+
+.phonetop i
+{
+    padding: 0 5px 0 5px;
+}
+
+.phone-header
+{
+    width: 100%;
+    display: flex;
+    margin: 15px;
+    justify-content: space-evenly;
+}
+
+.time
+{
+    width: 100%;
+    height: 100%;
+}
+
+.weather
+{
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 30px;
+}
+
+.sun
+{
+    font-size: 250%;
+    position: relative;
+    bottom: 10px;
+}
+
+.sun:hover
+{
+    color:orange;
+}
+
+
+.google-search
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top:100px;
+}
+
+.google-search div
+{
+    background-color: rgb(255,255,255, 0.6);
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.google-search i
+{
+    font-size: 20px;
+    color:white;
+    padding: 0 10px;
+}
+
+#google-search
+{
+    display: flex;
+    text-align: right;
+    background-color: rgb(255,255,255, 0.0);
+    width: 100%;
+    border-style: none;
+}
+
+#google-search:focus
+{
+outline-style:none
+}
+
+.grid-container
+{
+    display:flex;
+    justify-content: center;;
+    align-items: center;
+    margin-top: 55px;
+}
+.apps
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 300px;
+    height: 150px;
+}
+
+.description
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color:white;
+    font-size: xx-small;
+}
+
+.fb
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+.twit
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.sc
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.whatsA
+{
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+}
+
+.insta
+{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.email
+{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.playstore
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.linkd
+{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.ytube
+{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.settings
+{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.apps i 
+{
+    font-size: 40px;
+    margin: auto;
+    color: white;
+}
+
+.apps i:hover
+{
+    transform: scale(1.5);
+}
+
+.i1
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.i2
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.i3
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.i4
+{
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+}
+
+.i5
+{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.i6
+{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.i7
+{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.i8
+{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.i9
+{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.i10
+{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.main-apps
+{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 0 0 3px;
+}
+
+.main-apps i
+{
+    font-size: 40px;
+    color: white;
+}
+
+.main-apps i:hover
+{
+    transform: scale(1.5);
+}
+
+.bottom-nav
+{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px 0 0 0;
+}
+
+.bottom-nav i
+{
+    color: white;
+}
+        </style>
+    </body>
+    </html>
